@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right, .center {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.title, .controls, .button {
+  flex: none;
+}
+
+.button, .addItem, .clearAll {
+  padding: 10px 20px;
+}
+
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 150%;
+}
+
+.todo-delete {
+  margin: 10px;
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  padding: 20px;
+  border-bottom: 1px solid #055a54;
+}
+
+.todo-container:first-of-type {
+  border-top: 1px solid #055a54;
+}
+.center, .remover {
+background-color: #055a54;
+color: white;
+font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
+}
+.addItem, .clearAll {
+  position: relative;
+  float: right;
+}
+.controls{
+  padding-bottom: 4%;
+}
+.addItem, .clearAll, .remover {
+  border-radius: 10%;
+}
+.candidate{
+  width: 30%;
+  height: 30px;
+}
+li{
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 17%;
+  background-color: #043633;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+
+}
+.remover{
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  margin-top: 0.5%;
+}
+.clearAll{
+  margin-top: 2%;
+}

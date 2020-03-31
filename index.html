@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container center">
+      
+      <h1 class="center title">ToDo</h1>
+      
+      <div class="flow-right controls">
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+      
+      
+      <div class="flow-right controls">
+        <button class = "addItem center" onclick="addItem()">ADD</button>
+      </div>
+      
+      <input class = "center candidate" onfocus="this.value = ''" type="text" id="candidate"/>
+      
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <div class="flow-right controls">
+        <button class = "clearAll center" onclick="clearAll()">CLEAR</button>
+      </div>
+    
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
